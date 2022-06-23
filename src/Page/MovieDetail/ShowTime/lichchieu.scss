@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+}
+.item{
+    .item-lichchieu{
+        margin-top: 5px;
+        text-decoration: none;
+        text-align: center;
+        font-size:18px ;
+        display: block;
+        border-bottom: 1px solid #949494;
+        padding: 8px;
+        font-weight: 500;
+        color: blue;
+        
+        .active {
+            font-weight: bold;
+            color: rgb(248, 212, 7);
+            
+          }
+          &:hover  {
+            cursor: pointer;
+            transform: scale(1);
+            color: red;
+          }
+    }
+}
+
+

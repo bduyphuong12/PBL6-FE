@@ -1,0 +1,149 @@
+
+ .item__movie {
+	 outline: none;
+	 padding: spacing(1);
+}
+ .item__movie:hover .item__link .item__img .overlay {
+	 opacity: 1;
+}
+ .item__movie:hover .item__link .item__info .item__button {
+	 opacity: 1;
+}
+ .item__movie:hover .item__link .item__info .film__name + .film__during {
+	 opacity: 0;
+}
+ .item__movie .item__link {
+	 text-decoration: none;
+	 color: #4a4a4a;
+}
+ .item__movie .item__link .item__img {
+	 margin-bottom: spacing(1);
+	 position: relative;
+	 width: 100%;
+	 height: 290px;
+}
+ .item__movie .item__link .item__img img {
+	 border-radius: 3px;
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+}
+ .item__movie .item__link .item__img .overlay {
+	 opacity: 0;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 z-index: 15;
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 border-radius: 4px;
+	 top: 0;
+	 background: linear-gradient(to top, #000, transparent 100%);
+	 transition: all 0.2s;
+}
+ .item__movie .item__link .item__img .overlay .play__button {
+	 width: 60px;
+	 height: 60px;
+	 border: 2px solid rgba(110, 214, 255, 0.5);
+	 background-color: rgba(25, 50, 50, 0.6);
+	 position: absolute;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 border-radius: 50%;
+}
+ .item__movie .item__link .item__img .overlay .play__button:hover {
+	 opacity: 0.7;
+}
+ .item__movie .item__link .item__img .overlay .play__button .play__icon {
+	 color: #f2f3f5;
+}
+ .item__movie .item__link .item__img .film__age {
+	 position: absolute;
+	 top: 12px;
+	 left: 12px;
+	 border-radius: 4px;
+	 padding: 0 spacing(0.5);
+	 color: #f2f3f5;
+	 text-align: center;
+}
+ .item__movie .item__link .item__img .film__age.age--C {
+	 background-color: #fb4226;
+}
+ .item__movie .item__link .item__img .film__age.age--P {
+	 background-color: #00ac4d;
+	 padding: 0 spacing(1.4);
+}
+ .item__movie .item__link .item__img .sneaky__show {
+	 position: absolute;
+	 bottom: 10px;
+	 right: 10px;
+	 color: #f2f3f5;
+	 background-color: #fb4226;
+	 padding: spacing(0.5);
+	 border-radius: 6px;
+	 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+ .item__movie .item__link .item__img .film__audit {
+	 background-color: rgba(12, 27, 54, 0.8);
+	 border-radius: 4px;
+	 padding: 2px;
+	 position: absolute;
+	 top: 12px;
+	 right: 12px;
+	 width: 60px;
+	 height: 65px;
+	 text-align: center;
+}
+ .item__movie .item__link .item__img .film__audit .film__point {
+	 margin: 0;
+	 color: #f2f3f5;
+}
+ .item__movie .item__link .item__img .film__audit .film__star {
+	 color: #60c5ef;
+}
+ .item__movie .item__link .item__info {
+	 position: relative;
+}
+ .item__movie .item__link .item__info .film__name {
+	 color: #fff;
+	 margin-bottom: spacing(0.5);
+	 display: -webkit-box;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 -webkit-line-clamp: 1;
+	 -webkit-box-orient: vertical;
+	 padding-right: spacing(3);
+}
+ .item__movie .item__link .item__info .film__during {
+	 color: #fff;
+}
+ .item__movie .item__link .item__info .film__during:hover .item__button {
+	 opacity: 1;
+}
+ .item__movie .item__link .item__info .item__button {
+	 position: absolute;
+	 width: 100%;
+	 top: 0;
+	 background-color: #60c5ef;
+	 text-align: center;
+	 border-radius: 5px;
+	 opacity: 0;
+	 transition: all 0.2s;
+	 padding: spacing(1);
+}
+ .item__movie .item__link .item__info .item__button .buyTicket__button {
+	 color: #fff;
+}
+ @keyframes slide {
+	 from {
+		 transform: translateX(-200px);
+		 opacity: 0;
+	}
+	 to {
+		 transform: translateX(0);
+		 opacity: 1;
+	}
+}
+ 

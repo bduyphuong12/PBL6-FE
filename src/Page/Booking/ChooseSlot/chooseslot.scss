@@ -1,0 +1,341 @@
+
+.checkOut__right {
+  box-shadow: -8px -13px 17px -1px #cacbcc;
+  
+
+  .checkout__form {
+    overflow-y: scroll;
+    height: 500px;
+    width: 320px;
+    &::-webkit-scrollbar {
+      width: 2px;
+      background-color: #d8d8d8
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #949494;
+      border-radius: 5px;
+    }
+    .total__price {
+      text-align: center;
+      padding: 15px;
+      border-bottom: 1px dotted #cacbcc;
+      .price {
+        color: #8bc541;
+        letter-spacing: spacing(0.3);
+        font-size: 50px;
+        
+      }
+    }
+    .film__info {
+      padding: spacing(1.2) 0;
+      border-bottom: 1px dotted #cacbcc;
+      .film__age--C {
+        padding: spacing(0.3) spacing(0.7);
+        background-color: #fb4226;
+        border-radius: 5px;
+        color: #fff;
+        margin-right: spacing(0.5);
+        font-size: 20px;
+      }
+      .film__name{
+        font-size: 20px;
+      }
+      .theater__name {
+        margin-top: spacing(0.5);
+        
+        margin-bottom: 0;
+      }
+      .film__detail {
+        
+        margin: 0;
+        
+      }
+      .film__address {
+        
+        font-style: italic;
+        margin: 0;
+        
+      }
+    }
+    .count__slot {
+      padding: spacing(1.2) 0;
+      border-bottom: 1px dotted #cacbcc;
+      .slot {
+        color: #fb4226;
+        overflow-y: scroll;
+        height: 70px;
+        font-size: 18px;
+        &::-webkit-scrollbar {
+          width: 4px;
+          background-color: #d8d8d8
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #60c5ef;
+          border-radius: 5px;
+        }
+        // border: 1px solid $color-gray-1;
+        
+      }
+      .price {
+        color: #8bc541;
+        letter-spacing: spacing(0.1);
+      }
+    }
+    .container-form {
+      border-bottom: 1px dotted #cacbcc;
+      position: relative;
+      &.active .label__name {
+        transform: translate(0, 4px) scale(0.75);
+        color: #60c5ef;
+      }
+      input {
+        border: none;
+        font-size: 16px;
+        margin: 5px 0 5px;
+        outline: 0;
+        box-shadow: none;
+        &:valid {
+          padding-top: spacing(2.5);
+        }
+        
+      }
+      .label__name {
+        color: #949494;
+        font-size: 16px;
+        position: absolute;
+        transform-origin: top left;
+        transform: translate(0, 16px) scale(1);
+        transition: all 0.1s ease-in-out;
+        
+      }
+    }
+    .discountForm {
+      border-bottom: 1px dotted #cacbcc;
+      margin-top: spacing(1);
+      position: relative;
+      #txtDiscountCode {
+        border: 0;
+        &:valid {
+          padding-top: spacing(3);
+        }
+        &::placeholder {
+         
+          color: #29303b;
+        }
+        box-shadow: none;
+      }
+      .label__name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin: 0;
+        color: #949494;
+        
+        transition: all 0.4s;
+        
+      }
+      #btnCheckCode {
+        padding: spacing(0.3) spacing(1.2);
+        
+        background-color: #949494;
+        border-color: #949494;
+        color: #fff;
+        transition: linear 0.3s;
+        &:hover {
+          background-color: #60c5ef;
+          border: 1px solid #60c5ef;
+        }
+        
+      }
+    }
+    .payForm {
+      padding: spacing(1) 0;
+      .pay__link {
+        text-decoration: none;
+        .title__text {
+          color: #29303b;
+          font-size: 20px;
+        }
+        .text__notification {
+          margin-top: spacing(1);
+          margin-bottom: 0;
+          color: #fb4226;
+          
+        }
+        .noti__text{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .textNotification {
+    padding: spacing(1) spacing(1) spacing(7) spacing(0);
+    margin-bottom:20px ;
+    
+  }
+  span{
+    font-size: 10px;
+    
+  }
+  .btnContinue {
+    text-decoration: none;
+    
+    
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40%;
+    padding-right: 38%;
+    height: 60px;
+    text-align: center;
+    background-image: linear-gradient(223deg, #b4ec51 0, #429321 100%);
+    
+    color: #f7f8fa;
+    cursor: point;
+    
+  }
+}
+.seat_detail{
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.info .count {
+  color: #7bc47f;
+  font-size: 15px;
+}
+
+.info .total {
+  color: #7bc47f;
+  font-size: 15px;
+}
+
+
+.checkOut__left {
+  margin-top: 20px;
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -5px 5px 11px -2px #cacbcc;
+    
+    .memu__list {
+      list-style: none;
+      padding: spacing(3) spacing(6.5) spacing(1);
+      
+      .list__item {
+        display: inline;
+        margin-right: spacing(5);
+        padding-top: spacing(3);
+        
+        &.active {
+          color: #fb4226;
+          border-top: 1px solid #fb4226;
+        }
+        .step {
+          text-transform: uppercase;
+          
+          
+        }
+      }
+    }
+    .user__login {
+      padding: spacing(3) spacing(3) spacing(1);
+      
+      .user__link {
+        text-decoration: none;
+        img {
+          width: 30px;
+          border-radius: 50%;
+          margin: spacing(0.3);
+        }
+        .user__name {
+          
+          color: #949494;
+          
+        }
+      }
+    }
+  }
+  
+    .bookSlot__content {
+      padding: spacing(3) spacing(10) spacing(0) spacing(12);
+      margin-left: 10px;
+      .theater__info {
+        
+        .theater__img {
+          img {
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+          }
+          .theater__name {
+            margin-top: -200px;
+            margin-left: 10px;
+            .name {
+              color: #949494;
+              .subname {
+                color: #29303b;
+                font-size: 30px;
+              }
+            }
+            .showtime {
+              margin-left: 1px;
+              margin-top: -50px;
+              color: #949494;
+              
+            }
+          }
+        }
+        .timeKeepSlot {
+          text-align: center;
+          margin-right: 50px;
+          .title__text {
+            color: #949494;
+            
+            margin: 0;
+          }
+          .time {
+            color: #fb4226;
+            font-size: 30px;
+            letter-spacing: spacing(0.1);
+          }
+        }
+      }
+      .chooseSlot {
+        .screen__img {
+          img {
+            margin-left: 160px;
+            width: 65%;
+          }
+        }
+        .picking {
+          text-align: center;
+          
+          margin-bottom: spacing(3);
+          
+          
+          .slot__picking {
+            padding-left: 50px; ;
+           
+           
+          }
+        }
+        .slot__detail {
+          
+          text-align: center;
+          justify-content: center;
+          
+          .slot__text {
+            padding-top: 10px;
+            margin-top: spacing(1.5);
+            margin-right: spacing(1.5);
+            font-size: 20px;
+          }
+         
+        }
+      }
+    }
+  }
+

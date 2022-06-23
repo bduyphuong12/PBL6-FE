@@ -1,0 +1,55 @@
+.update-pass {
+  color: black;
+  height: 300px;
+  width: 330px;
+  margin-top: 10px;
+
+  p {
+    display: block;
+    height: 40px;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .input-container {
+    input {
+      outline: none;
+      margin-left: 5px;
+      border: 0;
+      border-bottom: 1px solid grey;
+      width: 270px;
+      font-size: 15px;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    border-radius: 99px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border: 0;
+    background-color: #fffb00;
+    &:hover {
+      background-color: #ffee02;
+    }
+  }
+  .button-submit {
+    display: flex;
+    justify-content: center;
+  }
+  .showpassword {
+    input {
+      margin-right: 10px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}

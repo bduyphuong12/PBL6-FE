@@ -1,0 +1,153 @@
+.navbar-light {
+  background: #d2691e;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2, green, blue, alpha);
+  height: 70px;
+  font-size: 0.9rem;
+  z-index: 1028 !important;
+}
+
+.navbar-logo {
+  margin-top: 10px;
+  margin-right: 80px;
+  margin-left: -80px;
+  text-decoration: none;
+  width: 150px;
+  height: 40%;
+}
+
+.navbar .nav-left-side {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+.navbar .nav-right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thongbao {
+  width: 25px;
+  display: block;
+  margin-left: 30px;
+}
+
+.tintuc {
+  width: 25px;
+  margin-left: 18px;
+  display: block;
+}
+
+.navbar-btn {
+  outline: none !important;
+  position: relative;
+  font-size: 18px;
+  background-color: #d2691e;
+  color: black;
+  height: 32px;
+  width: 63px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+}
+.avt {
+  width: 45px;
+  margin-top: 1px;
+  border-radius: 50%;
+  margin-left: 70px;
+}
+.menu {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.menu:hover {
+  cursor: pointer;
+  color: white;
+}
+.menu-icon {
+  width: 25px;
+  display: block;
+  margin-left: 10px;
+}
+.nav-center {
+  display: flex;
+  margin-left: 250px;
+  margin-right: 200px;
+}
+.category {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.navbar-btn:hover {
+  background-color: #d2691e;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: black;
+}
+.bell {
+  cursor: pointer;
+}
+i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.name-user {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+/* css ropdown*/
+.dropbtn {
+  margin-right: 15px;
+}
+.dropdown-content {
+  width: 100px;
+  padding: 10px 10px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: -80px;
+}
+.dropdown-content button {
+  padding: 5px 5px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #ffa402;
+}
+.dropdown-content a {
+  padding: 5px 5px;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color: #ffa402;
+}
+
+.dropdown-content a:hover,
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */

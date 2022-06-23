@@ -1,0 +1,61 @@
+.infomation {
+  color: black;
+  height: 300px;
+  width: 330px;
+  margin-top: 10px;
+  p {
+    display: block;
+    height: 40px;
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .input-container {
+    display: flex;
+    justify-content: center;
+    input &:focus {
+      &::-webkit-input-placeholde {
+        position: absolute;
+        left: -9000px;
+      }
+    }
+    input {
+      outline: none;
+      margin-left: 5px;
+      border: 0;
+      border-bottom: 1px solid grey;
+      width: 270px;
+      font-size: 15px;
+      margin-bottom: 40px;
+      border-radius: 4px;
+    }
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .save {
+    display: flex;
+    justify-content: center;
+    button {
+      cursor: pointer;
+      border-radius: 99px;
+
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      border: 0;
+      margin-left: 50px;
+      background-color: #fffb00;
+      &:hover {
+        background-color: #ffee02;
+      }
+    }
+  }
+}

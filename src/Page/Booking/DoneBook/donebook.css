@@ -1,0 +1,19 @@
+.doneBook{
+    margin-top: 80px;
+    text-align: center;
+
+}
+.detail-user{
+    border: 2px solid #a39ea0;
+    width: 500px;
+    margin-left: 420px;
+}
+p{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+h4{
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}

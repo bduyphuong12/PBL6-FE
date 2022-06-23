@@ -1,0 +1,35 @@
+div.history {
+  color: rgb(0, 0, 0);
+  padding: 0px 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  div.his-detail {
+    position: absolute;
+    left: 430px;
+    top: 0;
+  }
+  table {
+    width: 100%;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    tr {
+      border: 1px solid black;
+    }
+    th {
+      text-align: center;
+      border: 1px solid black;
+    }
+    td {
+      text-align: center;
+      border: 1px solid black;
+    }
+  }
+
+  h4 {
+    color: black;
+    font-size: 20px;
+  }
+}

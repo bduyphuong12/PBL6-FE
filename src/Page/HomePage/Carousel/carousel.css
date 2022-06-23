@@ -1,0 +1,77 @@
+
+ .hotMovie {
+	 margin-top: spacing(6.2);
+	 position: relative;
+	 margin-top: 70px;
+}
+ .hotMovie .hotMovie__content .myHotMovieCarousel.owl-carousel {
+	 display: block;
+}
+ .hotMovie .hotMovie__content .myHotMovieCarousel .owl-next {
+	 position: absolute;
+	 right: 0;
+	 top: 20%;
+	 color: #949494;
+	 outline: none;
+}
+ .hotMovie .hotMovie__content .myHotMovieCarousel .owl-next:hover {
+	 background: none;
+	 color: #949494;
+}
+ .hotMovie .hotMovie__content .myHotMovieCarousel .owl-prev {
+	 position: absolute;
+	 left: 0;
+	 top: 20%;
+	 color: #949494;
+	 outline: none;
+}
+ .hotMovie .hotMovie__content .myHotMovieCarousel .owl-prev:hover {
+	 background: none;
+	 color: #949494;
+}
+ .hotMovie .hotMovie__content .owl-dots {
+	 position: absolute;
+	 bottom: 10%;
+	 left: 50%;
+	 transform: translateX(-40%);
+}
+  span {
+	 font-size: 190px;
+   
+}
+  
+ .hotMovie .hotMovie__content:hover .item .item__img .background__overlay {
+	 opacity: 1;
+}
+ .hotMovie .hotMovie__content .item .item__img {
+	 cursor: pointer;
+}
+ .hotMovie .hotMovie__content .item .item__img img {
+	 width: 100%;
+	 height: 500px;
+}
+ .hotMovie .hotMovie__content .item .item__img .background__overlay {
+	 z-index: 1000;
+	 position: absolute;
+	 left: 50%;
+	 top: 50%;
+	 transform: translate(-30%, -50%);
+	 opacity: 0;
+	 margin: 0 auto;
+	 width: 80px;
+	 height: 80px;
+	 border: 2px solid #f2f3f5;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 border-radius: 50%;
+	 background-color: rgba(0, 0, 0, 0.3);
+	 transition: all 0.2s;
+}
+ .hotMovie .hotMovie__content .item .item__img .background__overlay .carousel__button {
+	 cursor: pointer;
+}
+ .hotMovie .hotMovie__content .item .item__img .background__overlay:hover {
+	 opacity: 0.7;
+}
+ 

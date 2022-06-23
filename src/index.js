@@ -8,7 +8,7 @@ import { Provider } from "react-redux";
 import { store, persistor } from "./Redux/store";
 import reportWebVitals from "./reportWebVitals";
 import { PersistGate } from "redux-persist/integration/react";
-axios.defaults.baseURL = 'http://localhost:5000/';
+axios.defaults.baseURL = 'https://pbl6-film-booking.herokuapp.com/';
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>

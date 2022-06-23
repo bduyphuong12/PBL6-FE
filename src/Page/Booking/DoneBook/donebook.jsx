@@ -70,7 +70,22 @@ function DoneBook() {
     }
     getgd();
   },[id_gd]);
-  
+  function xuliDate(val){
+    var hour = val.substring(11,13);
+    var minute = val.substring(14,16);
+
+    var daytime = hour+':'+ minute;
+    return(daytime);
+  }
+
+  function xuliDay(val){
+    var year = val.substring(0,4);
+    var month = val.substring(5,7);
+    var dt = val.substring(8,10);
+
+    var day = year+'-' + month + '-'+dt;
+    return(day);
+  }
   if(phimDetail && lcbyid && gd){
     return (
       <div>
@@ -80,7 +95,7 @@ function DoneBook() {
           <div>
             <QRCode
               id='qrcode'
-              value={ 'idGD: '+ id_gd + '.   ' +'idUser: ' + user.ID_User +'.    ' + 'Time: ' + moment(lcbyid.thoi_gian_chieu).format("DD/MM/yyyy hh:mm A") + '.    ' +  'Room: ' + lcByRoomPhimID.room_id + '.    ' +   'Seat: ' + soGhe + '.   '+'Total: ' + gd.so_tien +'000' 
+              value={ 'idGD: '+ id_gd + '.   ' +'idUser: ' + user.ID_User +'.    ' + 'Time: ' + xuliDate(lcbyid.thoi_gian_chieu) + '.    ' +  'Room: ' + lcByRoomPhimID.room_id + '.    ' +   'Seat: ' + soGhe + '.   '+'Total: ' + gd.so_tien +'000' 
                
             
             }
@@ -96,7 +111,7 @@ function DoneBook() {
               <p>Email: {user.Email}  </p>
               <p>Tên phim: {phimDetail.ten_phim}</p>
               <p>Ngày đặt: {moment(Date().toLocaleString()).format("DD/MM/yyyy  hh:mm A") }</p>
-              <p>Suất chiếu: {moment(lcbyid.thoi_gian_chieu).format("DD/MM/yyyy")}  {moment(lcbyid.thoi_gian_chieu).format("hh:mm A")}</p>
+              <p>Suất chiếu: {xuliDay(lcbyid.thoi_gian_chieu)}  {xuliDate(lcbyid.thoi_gian_chieu)}</p>
               <p>Rạp số: {lcByRoomPhimID.room_id}</p>
               <p>Số ghế: {soGhe}</p>
         </div>

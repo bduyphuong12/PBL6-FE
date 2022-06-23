@@ -103,7 +103,22 @@ export default function ChooseSlot({lcByRoomPhimID,phimDetail,lcbyid}) {
     return e.id
   })
 
- 
+  function xuliDate(val){
+    var hour = val.substring(11,13);
+    var minute = val.substring(14,16);
+
+    var daytime = hour+':'+ minute;
+    return(daytime);
+  }
+
+  function xuliDay(val){
+    var year = val.substring(0,4);
+    var month = val.substring(5,7);
+    var dt = val.substring(8,10);
+
+    var day = year+'-' + month + '-'+dt;
+    return(day);
+  }
 
   if(phimDetail && lcbyid && lcByRoomPhimID){
     return (
@@ -121,7 +136,7 @@ export default function ChooseSlot({lcByRoomPhimID,phimDetail,lcbyid}) {
                     </span>
                   </span>
                   <p className="showtime">
-                    Giờ chiếu: {moment(lcbyid.thoi_gian_chieu).format("hh:mm A")}
+                    Giờ chiếu: {xuliDate(lcbyid.thoi_gian_chieu)}
                   </p>
                 </div>
               </div>
@@ -174,7 +189,7 @@ export default function ChooseSlot({lcByRoomPhimID,phimDetail,lcbyid}) {
               {phimDetail.ten_phim}
             </span>
             <p className="film__detail">
-            {moment(lcbyid.thoi_gian_chieu).format("DD/MM/yyyy")}  {moment(lcbyid.result[0].thoi_gian_chieu).format("hh:mm A")}
+            {xuliDay(lcbyid.thoi_gian_chieu)}  {xuliDate(lcbyid.result[0].thoi_gian_chieu)}
             
             </p>
            

@@ -16,7 +16,7 @@ import {
 export const loginUser = async (user, dispatch, history, setMsg) => {
   dispatch(loginStart());
   try {
-    const res = await axios.post("http://localhost:5000/user/login", user);
+    const res = await axios.post("https://pbl6-film-booking.herokuapp.com/user/login", user);
     console.log("res", res.data);
     dispatch(loginSuccess(res.data));
     history.push("/");
@@ -31,7 +31,7 @@ export const loginUser = async (user, dispatch, history, setMsg) => {
 export const registerUser = async (user, dispatch, history, setMsg) => {
   dispatch(registerStart());
   try {
-    await axios.post("http://localhost:5000/user/register", user);
+    await axios.post("https://pbl6-film-booking.herokuapp.com/user/register", user);
     dispatch(registerSuccess());
     toast("Đăng ký thành công!!!");
     history.push("/login");
@@ -47,7 +47,7 @@ export const logoutUser = async (dispatch, id, token, axiosJWT, history) => {
   dispatch(logoutStart());
 
   try {
-    await axiosJWT.post("http://localhost:5000/user/logout", id, {
+    await axiosJWT.post("https://pbl6-film-booking.herokuapp.com/user/logout", id, {
       withCredentials: true,
       headers: { token: `Bearer ${token}` },
     });
@@ -66,7 +66,7 @@ export const updateUser = async (
   axiosJWT
 ) => {
   try {
-    const res = await axiosJWT.put("http://localhost:5000/user/update1", user, {
+    const res = await axiosJWT.put("https://pbl6-film-booking.herokuapp.com/user/update1", user, {
       withCredentials: true,
       headers: { token: `Bearer ${token}` },
     });
@@ -94,7 +94,7 @@ export const updatePassWord = async (
 ) => {
   try {
     const res = await axiosJWT.put(
-      "http://localhost:5000/user/updatepassword",
+      "https://pbl6-film-booking.herokuapp.com/user/updatepassword",
       user,
       {
         withCredentials: true,

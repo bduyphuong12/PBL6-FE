@@ -178,22 +178,25 @@ ul{
     border-radius: 6px;
     color: #00ac4d;
     display: inline-grid;
+    text-decoration: none;
 }
 .mb-2{
     background-color: #f7f8fa;
     border: 2px solid #d8d8d8;
     padding: 10px;
-    margin-right: spacing(1);
+    
     border-radius: 6px;
     font-size: 25px;
     color: #00ac4d;
     display: inline-grid;
+    text-decoration: none;
 }
 .tabBookMovie .container #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin p {
     margin-bottom: 0;
 }
 .tabBookMovie .container #movieTheater #pills-schedule .movieTheater__row .tab-content .tab-pane .theater__content .list__theater .list__item .collapse .collapse__content .film__timeshow ul .timeshow__item .timeshow__link .time__begin:hover {
     color: #60c5ef;
+    text-decoration: none;
 }
 .tabBookMovie .container #movieTheater #pills-comment {
     padding: 0 spacing(13);

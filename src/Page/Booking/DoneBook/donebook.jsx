@@ -95,7 +95,7 @@ function DoneBook() {
           <div>
             <QRCode
               id='qrcode'
-              value={ 'idGD: '+ id_gd + '.   ' +'idUser: ' + user.ID_User +'.    ' + 'Time: ' + xuliDate(lcbyid.thoi_gian_chieu) + '.    ' +  'Room: ' + lcByRoomPhimID.room_id + '.    ' +   'Seat: ' + soGhe + '.   '+'Total: ' + gd.so_tien +'000' 
+              value={ 'idGD: '+ id_gd + '.   ' +'idUser: ' + user.ID_User +'.    ' + 'Time: ' + xuliDay(lcbyid.thoi_gian_chieu) + ' '+ xuliDate(lcbyid.thoi_gian_chieu)+ '.    ' +  'Room: ' + lcByRoomPhimID.room_id + '.    ' +   'Seat: ' + soGhe + '.   '+'Total: ' + gd.so_tien +'000' 
                
             
             }

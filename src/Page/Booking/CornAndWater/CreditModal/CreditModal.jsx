@@ -12,9 +12,19 @@ export default class CreditModal extends Component {
     name: "",
     number: "",
   };
-  
- 
-  
+
+  checknull = () => {
+    var input1 = document.getElementsByClassName("input1")[0].value;
+    var input2 = document.getElementsByClassName("input2")[0].value;
+    var input3 = document.getElementsByClassName("input3")[0].value;
+    var input4 = document.getElementsByClassName("input4")[0].value;
+    if (input1 == "" || input2 == "" || input3 == "" || input4 == "") {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   handleInputFocus = (e) => {
     this.setState({ focus: e.target.name });
   };
@@ -65,13 +75,18 @@ export default class CreditModal extends Component {
                           <input
                             type="tel"
                             name="number"
-                            className="w-100"
+                            className="w-100 input1"
                             onChange={this.handleInputChange}
                             onFocus={this.handleInputFocus}
                             onBlur={this.validate}
                           />
                           <div className="cardnum">Card Number</div>
-                          <div style={{ fontSize: 12, color: "red" }} className='Error' >{this.state.numberError}</div>
+                          <div
+                            style={{ fontSize: 12, color: "red" }}
+                            className="Error"
+                          >
+                            {this.state.numberError}
+                          </div>
                         </div>
                         <div className="row">
                           <div className="col-6" style={{ paddingRight: 0 }}>
@@ -79,6 +94,7 @@ export default class CreditModal extends Component {
                               <input
                                 type="tel"
                                 name="expiry"
+                                className="input2"
                                 onChange={this.handleInputChange}
                                 onFocus={this.handleInputFocus}
                               />
@@ -90,6 +106,7 @@ export default class CreditModal extends Component {
                               <input
                                 type="tel"
                                 name="cvc"
+                                className="input3"
                                 onChange={this.handleInputChange}
                                 onFocus={this.handleInputFocus}
                               />
@@ -102,6 +119,7 @@ export default class CreditModal extends Component {
                           <input
                             type="text"
                             name="name"
+                            className="input4"
                             onChange={this.handleInputChange}
                             onFocus={this.handleInputFocus}
                           />
@@ -112,19 +130,20 @@ export default class CreditModal extends Component {
                   </div>
                 </div>
               </div>
-              <div 
+              <div
                 className="modal-footer"
                 // to={'/donebook'}
-                >
+              >
                 <button
                   type="button"
                   className="btn-style draw-border"
                   onClick={() => {
-                    
-                    
+                    if (this.checknull()) {
+                      alert("Xin hãy nhập đầy đủ thông tin");
+                    } else {
                       this.props.datVe();
-                   
-                    
+                    }
+
                     // alert('Đặt vé thành công, chúc bạn xem phim vui vẻ.')
                   }}
                 >

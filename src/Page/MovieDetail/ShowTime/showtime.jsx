@@ -124,8 +124,8 @@ export default function ShowTime() {
                   ) : (
                     <NavLink className="timeshow__link" to={"/login"}>
                       <div className="time__begin mb-2">
-                        
-                        <p>{xuliDate(d.thoi_gian_chieu)}</p>
+                        {moment(d.thoi_gian_chieu).format("DD/MM/yyyy")}
+                        <p>{moment(d.thoi_gian_chieu).format("hh:mm A")}</p>
                       </div>
                     </NavLink>
                   )}

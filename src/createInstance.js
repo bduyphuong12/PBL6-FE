@@ -5,7 +5,7 @@ axios.defaults.withCredentials = true;
 const refreshToken = async () => {
   try {
     axios.defaults.withCredentials = true;
-    const res = await axios.post("http://localhost:5000/user/refresh", {
+    const res = await axios.post("https://pbl6-film-booking.herokuapp.com/user/refresh", {
       withCredentials: true,
     });
     return res.data;

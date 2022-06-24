@@ -136,7 +136,7 @@ export default function ChooseSlot({lcByRoomPhimID,phimDetail,lcbyid}) {
                     </span>
                   </span>
                   <p className="showtime">
-                    Giờ chiếu: {xuliDate(lcbyid.thoi_gian_chieu)}
+                    Giờ chiếu: {xuliDate(lcbyid.result[0].thoi_gian_chieu)}
                   </p>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function ChooseSlot({lcByRoomPhimID,phimDetail,lcbyid}) {
               {phimDetail.ten_phim}
             </span>
             <p className="film__detail">
-            {xuliDay(lcbyid.thoi_gian_chieu)}  {xuliDate(lcbyid.result[0].thoi_gian_chieu)}
+            {xuliDay(lcbyid.result[0].thoi_gian_chieu)}  {xuliDate(lcbyid.result[0].thoi_gian_chieu)}
             
             </p>
            

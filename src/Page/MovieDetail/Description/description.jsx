@@ -10,7 +10,7 @@ export default function Description() {
   useEffect(() => {
     const getActorByPhim = () => {
       axios.get("/dv/getByIdPhim/" + phimID).then((res) => {
-        setActor(res.data);
+        setActor(res.data.result);
       });
     };
     getActorByPhim();
@@ -52,7 +52,7 @@ export default function Description() {
           <p className="category__name">Diễn viên</p>
             {
               React.Children.toArray(
-                actor.result.map(e =>(
+                actor.map(e =>(
                   <p className="category__content">{e.ten_dien_vien},</p>
                 ))
               )
